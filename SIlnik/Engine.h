@@ -29,12 +29,11 @@ public:
 	inline SDL_Renderer* GetRenderer() { return Renderer; }
 
 	SDL_Renderer* Renderer;
+	SDL_Window* Window;
 
 private:
 	Engine(){}
 	bool isRunning=true;
-	SDL_Window* Window;
-	
 	static Engine* s_Instance;
 };
 

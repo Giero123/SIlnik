@@ -3,6 +3,8 @@
 #include "DrawPrimitives.h"
 
 Engine* Engine::s_Instance = nullptr;
+DrawPrimitives* DrawPrimitives::s_Instance = nullptr;
+
 
 bool Engine::Init()
 {
@@ -24,6 +26,8 @@ bool Engine::Init()
 		return false;
 	}
 
+
+	DrawPrimitives::GetInstance()->DrawLine(100, 200, 90, -40);
 	return isRunning = true;
 }
 

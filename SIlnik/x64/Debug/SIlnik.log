@@ -1,3 +1,2 @@
-﻿Main.obj : warning LNK4020: rekord typu w elemencie „” jest uszkodzony; niektóre symbole i typy mogą być niedostępne z debugera
-SDL2.lib(SDL2.dll) : warning LNK4020: rekord typu w elemencie „” jest uszkodzony; niektóre symbole i typy mogą być niedostępne z debugera
-  SIlnik.vcxproj -> E:\UnrealProjects\GameEngine\x64\Debug\SIlnik.exe
+﻿  Engine.cpp
+  SIlnik.vcxproj -> C:\Users\Gierxk\Desktop\SIlnik\x64\Debug\SIlnik.exe
