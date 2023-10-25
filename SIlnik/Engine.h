@@ -29,13 +29,15 @@ public:
 	bool IsRunning();
 	inline SDL_Renderer* GetRenderer() { return Renderer; }
 
-
+	
+	SDL_Renderer* Renderer;
 private:
 	Engine(){}
+	static Engine* s_Instance;
 	bool isRunning = true;
 	SDL_Window* Window;
-	SDL_Renderer* Renderer;
-	static Engine* s_Instance;
+	
+	
 };
 
 #endif //ENGINE_H
