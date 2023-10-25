@@ -25,7 +25,8 @@ bool Engine::Init()
 		SDL_Log("Failed to create renderer %s", SDL_GetError());
 		return false;
 	}
-	TextureManager::GetInstance()->Load("Background", "Background.png");
+	TextureManager::GetInstance()->Load("Background", "assets/Background.png");
+	
 	return isRunning = true;
 }
 
@@ -36,7 +37,11 @@ bool Engine::Clean()
 
 void Engine::Quit()
 {
-	
+	TextureManager::GetInstance()->Clean();
+	SDL_DestroyRenderer(Renderer);
+	SDL_DestroyWindow(Window);
+	IMG_Quit();
+	SDL_Quit();
 }
 
 void Engine::Update()
@@ -48,7 +53,7 @@ void Engine::Render()
 {
 	SDL_SetRenderDrawColor(Renderer, 0, 0, 0,255);
 	SDL_RenderClear(Renderer);
-
+	DrawPrimitives::GetInstance()->DrawLine(1440, 800, 0, 0);
 	TextureManager::GetInstance()->Draw("Background", 0, 0, 1440, 800);
 	SDL_RenderPresent(Renderer);
 }
