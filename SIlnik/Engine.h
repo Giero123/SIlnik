@@ -4,13 +4,14 @@
 #include "SDL_image.h"
 #include "DrawPrimitives.h"
 
-#define ScreenWidth 960
-#define ScreenHeight 640
+#define ScreenWidth 1440
+#define ScreenHeight 800
 
 
 class Engine
 {
 public:
+
 
 	static Engine* GetInstance()
 	{
@@ -28,12 +29,12 @@ public:
 	bool IsRunning();
 	inline SDL_Renderer* GetRenderer() { return Renderer; }
 
-	SDL_Renderer* Renderer;
-	SDL_Window* Window;
 
 private:
 	Engine(){}
-	bool isRunning=true;
+	bool isRunning = true;
+	SDL_Window* Window;
+	SDL_Renderer* Renderer;
 	static Engine* s_Instance;
 };
 

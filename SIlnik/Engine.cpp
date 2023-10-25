@@ -1,9 +1,9 @@
 #include "Engine.h"
 #include <iostream>
 #include "DrawPrimitives.h"
+#include "TextureManager.h"
 
 Engine* Engine::s_Instance = nullptr;
-DrawPrimitives* DrawPrimitives::s_Instance = nullptr;
 
 
 bool Engine::Init()
@@ -25,9 +25,7 @@ bool Engine::Init()
 		SDL_Log("Failed to create renderer %s", SDL_GetError());
 		return false;
 	}
-
-
-	DrawPrimitives::GetInstance()->DrawLine(100, 200, 90, -40);
+	TextureManager::GetInstance()->Load("Background", "Background.png");
 	return isRunning = true;
 }
 
@@ -50,6 +48,9 @@ void Engine::Render()
 {
 	SDL_SetRenderDrawColor(Renderer, 0, 0, 0,255);
 	SDL_RenderClear(Renderer);
+
+	TextureManager::GetInstance()->Draw("Background", 0, 0, 1440, 800);
+	SDL_RenderPresent(Renderer);
 }
 
 void Engine::Events()
