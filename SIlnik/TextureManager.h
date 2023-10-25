@@ -2,7 +2,7 @@
 #define TEXTUREMANAGER_H
 #include <string>
 #include "SDL.h"
-#include "SDL_image.h"
+#include <map>
 
 class TextureManager
 {
@@ -19,7 +19,8 @@ public:
 	void Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip = SDL_FLIP_NONE);
 
 private:
-	TextureManager();
+	TextureManager() {}
+	std::map<std::string, SDL_Texture*> textureMap;
 	static TextureManager* s_Instance;
 };
 

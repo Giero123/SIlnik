@@ -1,5 +1,2 @@
-﻿Engine.obj : error LNK2019: nierozpoznany symbol zewnętrzny "private: __cdecl DrawPrimitives::DrawPrimitives(void)" (??0DrawPrimitives@@AEAA@XZ) przywołany w funkcji "public: static class DrawPrimitives * __cdecl DrawPrimitives::GetInstance(void)" (?GetInstance@DrawPrimitives@@SAPEAV1@XZ)
-Main.obj : error LNK2001: nierozpoznany symbol zewnętrzny "private: __cdecl DrawPrimitives::DrawPrimitives(void)" (??0DrawPrimitives@@AEAA@XZ)
-Engine.obj : error LNK2001: nierozpoznany symbol zewnętrzny "private: static class DrawPrimitives * DrawPrimitives::s_Instance" (?s_Instance@DrawPrimitives@@0PEAV1@EA)
-Main.obj : error LNK2001: nierozpoznany symbol zewnętrzny "private: static class DrawPrimitives * DrawPrimitives::s_Instance" (?s_Instance@DrawPrimitives@@0PEAV1@EA)
-E:\UnrealProjects\GameEngine\x64\Debug\SIlnik.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 2
+﻿  Engine.cpp
+  SIlnik.vcxproj -> E:\UnrealProjects\GameEngine\x64\Debug\SIlnik.exe
