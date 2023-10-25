@@ -28,10 +28,19 @@ bool TextureManager::Load(std::string id, std::string filename)
 
 void TextureManager::Drop(std::string id)
 {
+	SDL_DestroyTexture(textureMap[id]);
+	textureMap.erase(id);
 }
 
 void TextureManager::Clean()
 {
+	for (auto const& i : textureMap)
+	{
+		SDL_DestroyTexture(textureMap[i.first]);
+	}
+	textureMap.clear();
+
+	SDL_Log("DEBUG: TextureManager wyczyszczony");
 }
 
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip)

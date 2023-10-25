@@ -1,2 +1,5 @@
 ﻿  Engine.cpp
+  TextureManager.cpp
+  Generowanie kodu...
+DrawPrimitives.obj : warning LNK4099: nie znaleziono pliku PDB "" z elementem "DrawPrimitives.obj" lub w pozycji ""; obiekt zostanie skonsolidowany bez informacji debugowania
   SIlnik.vcxproj -> E:\UnrealProjects\GameEngine\x64\Debug\SIlnik.exe
