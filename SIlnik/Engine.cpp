@@ -1,5 +1,6 @@
 #include "Engine.h"
 #include <iostream>
+#include "DrawPrimitives.h"
 
 Engine* Engine::s_Instance = nullptr;
 
@@ -33,7 +34,7 @@ bool Engine::Clean()
 
 void Engine::Quit()
 {
-	exit(0);
+	
 }
 
 void Engine::Update()
@@ -45,11 +46,7 @@ void Engine::Render()
 {
 	SDL_SetRenderDrawColor(Renderer, 0, 0, 0,255);
 	SDL_RenderClear(Renderer);
-	SDL_SetRenderDrawColor(Renderer,255, 255, 255, 255);
-	SDL_RenderDrawPoint(Renderer, ScreenWidth / 2, ScreenHeight/ 2);
-	SDL_RenderPresent(Renderer);
 }
-
 
 void Engine::Events()
 {
