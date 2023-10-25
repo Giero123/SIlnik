@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31946.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/unrealprojects/gameengine/silnik/texturemanager.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "55223f7cb03ab0cf22d7e6f3d9dec64590307fe069f029d963a84ef0c59d4101"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/unrealprojects/gameengine/silnik/texturemanager.h"
+          },
+          "hashes": {
+            "sha-256": "12a0d873d5fab4254abadeab5010c180091981c08b8b4d55165c038fafbb2640"
+          }
+        }
+      ]
+    }
+  ]
+}

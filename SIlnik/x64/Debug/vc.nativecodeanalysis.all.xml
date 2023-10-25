@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>E:\UnrealProjects\GameEngine\SIlnik\</FILEPATH>
+      <FILENAME>Engine.h</FILENAME>
+      <LINE>31</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Zmienna „Engine::isRunning” jest niezainicjowana. Zawsze inicjuj zmienną składową (type.6).</DESCRIPTION>
+    <FUNCTION>Engine::{ctor}</FUNCTION>
+    <DECORATED>??0Engine@@AEAA@XZ</DECORATED>
+    <FUNCLINE>31</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Engine::isRunning</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>E:\UnrealProjects\GameEngine\SIlnik\</FILEPATH>
+      <FILENAME>Engine.cpp</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>6282</DEFECTCODE>
+    <DESCRIPTION>Niepoprawny operator.</DESCRIPTION>
+    <FUNCTION>Engine::Init</FUNCTION>
+    <DECORATED>?Init@Engine@@QEAA_NXZ</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>
