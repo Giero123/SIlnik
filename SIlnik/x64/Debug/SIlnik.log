@@ -1,6 +1,3 @@
-﻿  Main.cpp
-Engine.obj : error LNK2019: nierozpoznany symbol zewnętrzny "private: __cdecl DrawPrimitives::DrawPrimitives(void)" (??0DrawPrimitives@@AEAA@XZ) przywołany w funkcji "public: static class DrawPrimitives * __cdecl DrawPrimitives::GetInstance(void)" (?GetInstance@DrawPrimitives@@SAPEAV1@XZ)
-Main.obj : error LNK2001: nierozpoznany symbol zewnętrzny "private: __cdecl DrawPrimitives::DrawPrimitives(void)" (??0DrawPrimitives@@AEAA@XZ)
-Engine.obj : error LNK2001: nierozpoznany symbol zewnętrzny "private: static class DrawPrimitives * DrawPrimitives::s_Instance" (?s_Instance@DrawPrimitives@@0PEAV1@EA)
-Main.obj : error LNK2001: nierozpoznany symbol zewnętrzny "private: static class DrawPrimitives * DrawPrimitives::s_Instance" (?s_Instance@DrawPrimitives@@0PEAV1@EA)
-C:\Users\Gierxk\Desktop\SIlnik\x64\Debug\SIlnik.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 2
+﻿Main.obj : warning LNK4020: rekord typu w elemencie „” jest uszkodzony; niektóre symbole i typy mogą być niedostępne z debugera
+SDL2.lib(SDL2.dll) : warning LNK4020: rekord typu w elemencie „” jest uszkodzony; niektóre symbole i typy mogą być niedostępne z debugera
+  SIlnik.vcxproj -> E:\UnrealProjects\GameEngine\x64\Debug\SIlnik.exe
