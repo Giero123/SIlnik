@@ -5,7 +5,7 @@ Engine* Engine::s_Instance = nullptr;
 
 bool Engine::Init()
 {
-	if (SDL_Init(SDL_INIT_EVERYTHING) != 0 && IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG) != 0) {
+	if (SDL_Init(SDL_INIT_EVERYTHING) != 0 && IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG) != 0 && SDL_Init(SDL_INIT_VIDEO) != 0) {
 		SDL_Log("Failed to initialize SDL %s", SDL_GetError());
 		return false;
 	}
@@ -44,12 +44,13 @@ void Engine::Update()
 
 void Engine::Render()
 {
+	SDL_RenderSetScale(Renderer, 4, 4);
 	SDL_SetRenderDrawColor(Renderer, 255, 255, 255,255);
-	SDL_RenderSetScale(Renderer, 30, 30);
 	SDL_RenderClear(Renderer);
 	SDL_SetRenderDrawColor(Renderer,0, 0, 0, 255);
-	SDL_RenderDrawPoint(Renderer, ScreenWidth / 2, ScreenHeight / 2);
+	SDL_RenderDrawPoint(Renderer, ScreenHeight / 2, ScreenWidth / 2);
 	SDL_RenderPresent(Renderer);
+	SDL_Delay(100000);
 }
 
 
