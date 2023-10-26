@@ -2,9 +2,10 @@
 #include <iostream>
 #include "DrawPrimitives.h"
 #include "TextureManager.h"
+#include <SDL_framerate.h>
+#include <SDL_gfxPrimitives.h>
 
 Engine* Engine::s_Instance = nullptr;
-
 
 bool Engine::Init()
 {
@@ -26,7 +27,6 @@ bool Engine::Init()
 		return false;
 	}
 	TextureManager::GetInstance()->Load("Background", "assets/Background.png");
-	
 	return isRunning = true;
 }
 
@@ -46,7 +46,7 @@ void Engine::Quit()
 
 void Engine::Update()
 {
-	//std::cout << "EO" << std::endl;
+
 }
 
 void Engine::Render()

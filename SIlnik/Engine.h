@@ -3,6 +3,7 @@
 #include "SDL.h"
 #include "SDL_image.h"
 #include "DrawPrimitives.h"
+#include <SDL_framerate.h>
 
 #define ScreenWidth 1440
 #define ScreenHeight 800
@@ -20,17 +21,15 @@ public:
 
 	bool Init();
 	bool Clean();
-
 	void Quit();
 	void Update();
 	void Render();
 	void Events();
-
 	bool IsRunning();
 	inline SDL_Renderer* GetRenderer() { return Renderer; }
 
-	
 	SDL_Renderer* Renderer;
+
 private:
 	Engine(){}
 	static Engine* s_Instance;
