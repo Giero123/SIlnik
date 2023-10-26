@@ -25,7 +25,7 @@ public:
 	void Update();
 	void Render();
 	void Events();
-
+	void Draw();
 	bool IsRunning();
 	inline SDL_Renderer* GetRenderer() { return Renderer; }
 

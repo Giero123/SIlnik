@@ -1,2 +1,9 @@
-﻿  Engine.cpp
+﻿  DrawPrimitives.cpp
+C:\Users\Gierxk\Desktop\SIlnik\SIlnik\DrawPrimitives.cpp(76,16): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Gierxk\Desktop\SIlnik\SIlnik\DrawPrimitives.cpp(79,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Gierxk\Desktop\SIlnik\SIlnik\DrawPrimitives.cpp(80,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+  Engine.cpp
+  Main.cpp
+  TextureManager.cpp
+  Generowanie kodu...
   SIlnik.vcxproj -> C:\Users\Gierxk\Desktop\SIlnik\x64\Debug\SIlnik.exe
