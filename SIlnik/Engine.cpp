@@ -2,10 +2,10 @@
 #include <iostream>
 #include "DrawPrimitives.h"
 #include "TextureManager.h"
-#include <SDL_framerate.h>
-#include <SDL_gfxPrimitives.h>
 
 Engine* Engine::s_Instance = nullptr;
+
+SDL_Load
 
 bool Engine::Init()
 {
@@ -27,6 +27,9 @@ bool Engine::Init()
 		return false;
 	}
 	TextureManager::GetInstance()->Load("Background", "assets/Background.png");
+
+	Draw();
+
 	return isRunning = true;
 }
 
@@ -46,15 +49,16 @@ void Engine::Quit()
 
 void Engine::Update()
 {
-
+	//std::cout << "EO" << std::endl;
 }
 
 void Engine::Render()
 {
 	SDL_SetRenderDrawColor(Renderer, 0, 0, 0,255);
-	SDL_RenderClear(Renderer);
-	DrawPrimitives::GetInstance()->DrawLine(1440, 800, 0, 0);
-	TextureManager::GetInstance()->Draw("Background", 0, 0, 1440, 800);
+	//SDL_RenderClear(Renderer);
+	
+	
+
 	SDL_RenderPresent(Renderer);
 }
 
@@ -72,6 +76,18 @@ void Engine::Events()
 		break;
 	}
 }
+
+void Engine::Draw()
+{
+
+	TextureManager::GetInstance()->Draw("Background", 0, 0, 1440, 800);
+	DrawPrimitives::GetInstance()->DrawLine(ScreenWidth, 0, 0, ScreenHeight);
+	DrawPrimitives::GetInstance()->DrawLine(ScreenWidth / 2 + 100, 70, ScreenWidth / 2, 60);
+	DrawPrimitives::GetInstance()->DrawRectangle(ScreenWidth / 2+150, ScreenHeight / 2+150, 100, 150,1);
+	DrawPrimitives::GetInstance()->DrawTriangle(ScreenWidth / 2 - 100, 50, ScreenWidth / 2 + 100, 70, ScreenWidth / 2,  120,0);
+	DrawPrimitives::GetInstance()->DrawCircle(ScreenWidth/2 - 250, ScreenHeight/2 - 150, 30, 0);
+}
+
 
 bool Engine::IsRunning()
 {

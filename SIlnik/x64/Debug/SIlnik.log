@@ -1,14 +1,9 @@
 ﻿  DrawPrimitives.cpp
+C:\Users\Gierxk\Desktop\SIlnik\SIlnik\DrawPrimitives.cpp(76,16): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Gierxk\Desktop\SIlnik\SIlnik\DrawPrimitives.cpp(79,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Gierxk\Desktop\SIlnik\SIlnik\DrawPrimitives.cpp(80,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
   Engine.cpp
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(42,15): error C2065: "x2": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(42,20): error C2065: "x1": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(43,15): error C2065: "y2": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(46,6): error C2065: "x1": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(46,11): error C2065: "x2": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(50,11): error C2065: "y2": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(56,10): error C2065: "x1": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(57,8): error C2440: "inicjowanie": nie można konwertować z "double (__cdecl *)(double)" na "int"
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(57,8): message : Brak kontekstu, w którym ta konwersja jest możliwa
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(61,12): error C2065: "x2": niezadeklarowany identyfikator
-E:\UnrealProjects\GameEngine\SIlnik\Engine.cpp(61,23): error C2065: "y2": niezadeklarowany identyfikator
+  Main.cpp
+  TextureManager.cpp
   Generowanie kodu...
+  SIlnik.vcxproj -> C:\Users\Gierxk\Desktop\SIlnik\x64\Debug\SIlnik.exe

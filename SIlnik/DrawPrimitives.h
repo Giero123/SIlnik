@@ -14,9 +14,9 @@ public:
     SDL_Renderer* Renderer1;
 
     void DrawLine(int x1, int y1, int x2, int y2);
-    void DrawCircle(int r, int filled, int size);
-    void DrawRectangle(int x1, int y1, int x2, int y2);
-    void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3);
+    void DrawCircle(int xc, int yc,int r, bool filled);
+    void DrawRectangle(int x1, int y1, int a, int b,bool filled);
+    void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3,bool filled);
 
     
 private:
