@@ -16,3 +16,16 @@ int main(int argc, char* args[])
 
     return 0;
 }
+
+
+
+/*
+ *
+ *todo:
+ *  rest of fillings
+ *  sizes of line
+ *  keyboard and mouse inputs
+ *  bitmaps and animated bitmaps
+ *
+ *
+ */

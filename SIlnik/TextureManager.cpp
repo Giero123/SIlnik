@@ -5,25 +5,24 @@
 
 TextureManager* TextureManager::s_Instance = nullptr;
 
-bool TextureManager::Load(std::string id, std::string filename)
+SDL_Texture* TextureManager::Load(std::string id, std::string filename)
 {
 	SDL_Surface* surface = IMG_Load(filename.c_str());
-		if (surface == nullptr)
-		{
-			std::cout << "Fail: wczytanie powierzchni : " << filename << " z bledem : " << SDL_GetError() << std::endl;
-			return false;
-		}
+	if (surface == nullptr)
+	{
+		std::cout << "Fail: wczytanie powierzchni : " << filename << " z b³êdem : " << SDL_GetError() << std::endl;
+		return nullptr;
+	}
 
 	SDL_Texture* texture = SDL_CreateTextureFromSurface(Engine::GetInstance()->GetRenderer(), surface);
-	if(texture == nullptr)
+	if (texture == nullptr)
 	{
-		std::cout << "Fail: wczytanie tekstury : " << filename << " z bledem : " << SDL_GetError() << std::endl;
-		return false;
+		std::cout << "Fail: wczytanie tekstury : " << filename << " z b³êdem : " << SDL_GetError() << std::endl;
+		return nullptr;
 	}
 
 	textureMap[id] = texture;
-	return true;
-
+	return texture;
 }
 
 void TextureManager::Drop(std::string id)

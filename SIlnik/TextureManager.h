@@ -12,7 +12,7 @@ public:
 		return s_Instance = (s_Instance != nullptr) ? s_Instance : new TextureManager();
 	}
 
-	bool Load(std::string id, std::string filename);
+	SDL_Texture* Load(std::string id, std::string filename);
 	void Drop(std::string id);
 	void Clean();
 
